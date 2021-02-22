@@ -1,25 +1,25 @@
 {
-    "name"         : "node-red-auth-github",
+    "name"         : "node-red-auth-keycloaksteve",
     "version"      : "0.1.1",
-    "description"  : "A GitHub authentication plugin for Node-RED",
+    "description"  : "A Keycloak authentication plugin for Node-RED",
     "homepage"     : "http://nodered.org",
     "license"      : "Apache-2.0",
     "repository"   : {
         "type":"git",
-        "url":"https://github.com/node-red/node-red-auth-twitter.git"
+        "url":"https://github.com/stevegroom/node-red-auth-keycloaksteve.git"
     },
     "main": "./lib/index.js",
     "author": [
-        {"name": "Nick O'Leary", "email": "nick.oleary@gmail.com"}
+        {"name": "Steve copied Nick O'Leary", "email": "stevereg1@groom.ch"}
     ],
     "keywords": [
         "node-red",
-        "github",
+        "keycloak",
         "node-red-auth",
         "authentication",
         "auth"
     ],
     "dependencies": {
-        "passport-github": "1.1.0"
+        "passport-keycloaksteve": "1.1.0"
     }
 }
