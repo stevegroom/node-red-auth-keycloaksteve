@@ -1,8 +1,8 @@
-# Node-RED Authentication with GitHub
+# Node-RED Authentication with Keycloak
 
-[Node-RED](https://nodered.org) plugin for authenticating users with GitHub.
+[Node-RED](https://nodered.org) plugin for authenticating users with Keycloak.
 
-This modules lets you restrict access to the Node-RED editor to specific GitHub
+This modules lets you restrict access to the Node-RED editor to specific Keycloak
 users.
 
 **Note:** this requires Node-RED 0.17 or later
