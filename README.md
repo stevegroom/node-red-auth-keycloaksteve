@@ -12,14 +12,13 @@ users.
 
 In your Node-RED user directory, typically `~/.node-red`:
 
-    $ npm install node-red/node-red-auth-github
+    $ npm install node-red/node-red-auth-keycloaksteve
 
 ## Usage
 
-### Register a new GitHub application
+### Register a new Keycloak client
 
-To enable access control with GitHub, you must first [register a new application
-on your GitHub account](https://github.com/settings/developers).
+To enable access control with Keycloak, you must first register a new client.
 
 Once created, you will be provided a _Client ID_ and _Client Secret_ that
 you will need to use to configure the authentication plugin.
@@ -29,12 +28,12 @@ you will need to use to configure the authentication plugin.
 Access control for the Node-RED editor is configured in your `settings.js` file
 using the `adminAuth` property.
 
-    adminAuth: require('node-red-auth-github')({
-        clientID: GITHUB_CLIENT_ID,
-        clientSecret: GITHUB_CLIENT_SECRET,
+    adminAuth: require('node-red-auth-keycloaksteve')({
+        clientID: KEYCLOAK_CLIENT_ID,
+        clientSecret: KEYCLOAK_CLIENT_SECRET,
         baseURL: "http://localhost:1880/",
         users: [
-           { username: "knolleary",permissions: ["*"]}
+           { username: "steve@groom.ch",permissions: ["*"]}
         ]
     })
 
